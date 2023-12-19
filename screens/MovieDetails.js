@@ -1,18 +1,18 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 
-//const IMAGE_BASE_URL = '..............';
+const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500';
 
 const MovieDetailsScreen = ({ route }) => {
   const { movie } = route.params;
 
   return (
     <View style={styles.container}>
-      // <Image
-      //   style={styles.poster}
-      //   source={{ uri: `${IMAGE_BASE_URL}/${movie.poster_path}` }}
-      //   resizeMode="cover"
-      // />
+      <Image
+        style={styles.poster}
+        source={{ uri: `${IMAGE_BASE_URL}/${movie.poster_path}` }}
+        resizeMode="cover"
+      />
       <View style={styles.details}>
         <Text style={styles.title}>{movie.title}</Text>
         <Text style={styles.info}>Release Date: {movie.release_date}</Text>
