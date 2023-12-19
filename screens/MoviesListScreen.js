@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { View, Text, FlatList, TouchableOpacity, TextInput, Button, ActivityIndicator, StyleSheet } from 'react-native';
 import axios from 'axios';
 
-const API_KEY = 'YOUR_TMDB_API_KEY';
-const BASE_URL = '........';
-const IMAGE_BASE_URL = '........';
+const API_KEY = '815c5c047dfcb76226bd43fca93e2df5';
+const BASE_URL = 'https://api.themoviedb.org/3';
+const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500';
 
 const MovieListScreen = ({ navigation }) => {
   const [movies, setMovies] = useState([]);
